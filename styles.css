@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 1400px;
+    height: 200px;
+    margin: auto;
+}
+
+.header li {
+    margin: auto;
+    list-style-type: none;
+}
+
+.icon {
+    justify-content: left;
+}
+
+
+
+@media (max-width: 1450px) {
+    .header {
+        width: 1000px;
+    }
+}
+@media (max-width: 1200px) {
+    .header li {
+        display: none;
+    }
+}

@@ -1,31 +1,106 @@
+
+/* ------------------------ */
+/* --------Header-------- */
+/* ------------------------ */
+
 .header {
     display: flex;
     padding: 20px;
     text-align: center;
-    font-size: 30px;
-    width: 1400px;
-    height: 200px;
+    font-size: 26px;
+    max-width: 1400px;
     margin: auto;
+    align-items: center;
 }
 
 .header li {
-    margin: auto;
+    margin: 24px;
     list-style-type: none;
+    font-family: 'Viga', sans-serif;
+    font-weight: 100;
+    transition: all 0.3s ease;
+}
+
+.header li:hover {
+    /* text-decoration: underline; */
+    transform: scale(1.1);
+    color: #2964B1;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 .icon {
     justify-content: left;
+    width: 500px;
 }
 
-
-
-@media (max-width: 1450px) {
-    .header {
-        width: 1000px;
-    }
+.menu {
+    display: none;
+    width: 64px;
+    justify-content: right;
+    margin-left: auto
 }
-@media (max-width: 1200px) {
-    .header li {
+
+@media (max-width: 1050px) {
+    .header nav {
         display: none;
     }
+    .menu {
+        display: block;
+    }
+    .primary-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .icon {
+        width: 87.5%;
+    }
+    .menu {
+        width: 12.5%;
+    }
+    .header {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
+
+/* ------------------------ */
+
+body {
+    /* background-image: url('https://canmancan.com/wp-content/uploads/cans3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* The secret ingredient */
+}
+
+p {
+    font-family: 'Viga', sans-serif;
+    font-weight: 100;
+    text-align:center; 
+    margin:0px 0px;
+    font-size: 64px;
+}
+
+
+.primary-content {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    max-width: 1400px;
+    height: 600px;
+    margin: auto;
+    align-items: center;
 }
